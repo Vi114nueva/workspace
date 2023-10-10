@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Seudo - Clase </title>
+
+    <style>
+
+        .menu {
+            background-color: #14a4a4;
+        }
+
+        .menu-nav {
+            list-style: none;
+        }
+
+        .menu-nav__item {
+            display: inline-block;
+        }
+
+        .menu-nav__item a {
+            color: #ffff;
+            text-decoration: none;
+        }
+
+        /* seudo clases  */
+
+        .menu-nav__item a:hover {
+            color: red;
+        }
+
+        .menu-nav__item a:active {
+            color: blue
+        }
+
+        /* seudo elemento */
+
+        .menu-nav__item a::after {
+            content: ' | ';
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href=""> Inicio </a></li>
+                <li class="menu-nav__item"><a href=""> Trabajos </a></li>
+                <li class="menu-nav__item"><a href=""> Blog </a></li>
+                <li class="menu-nav__item"><a href=""> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

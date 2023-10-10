@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Seudo - Clase </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            background-color: #14a4a4;
+            padding: 10px 0px;
+        }
+
+        .menu-nav {
+            list-style: none;
+            padding-left: 5px;
+            margin: 0px;
+        }
+
+        .menu-nav__item {
+            display: inline-block;
+        }
+
+        .menu-nav__item a {
+            color: #ffff;
+            text-decoration: none;
+        }
+
+        /* seudo clases  */
+
+        .menu-nav__item a:hover {
+            color: red;
+        }
+
+        .menu-nav__item a:active {
+            color: blue
+        }
+
+        /* seudo elemento */
+
+        .menu-nav__item a::after {
+            content: ' | ';
+        }
+
+        /* modelo de cajas  */
+
+        main {
+            width: 100%;
+            height: 300px;
+            border: 10px solid grey;
+            padding: 20px 85px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href=""> Inicio </a></li>
+                <li class="menu-nav__item"><a href=""> Trabajos </a></li>
+                <li class="menu-nav__item"><a href=""> Blog </a></li>
+                <li class="menu-nav__item"><a href=""> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1> Hola Mundo </h1>
+            <div>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cupiditate natus est atque praesentium velit, maxime quos delectus 
+                    magni dicta quod cum necessitatibus aliquam laborum id illum vitae quae! 
+                    Dolorem, ipsum?
+                </p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
