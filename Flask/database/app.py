@@ -6,7 +6,7 @@ import os
 dbdir = 'sqlite:///' + os.path.abspath(os.getcwd()) + '/database.db' 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'admin123'
+app.config['SECRET_KEY'] = '12345'
 app.config['SQLALCHEMY_DATABASE_URI'] = dbdir
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 app.app_context().push()
